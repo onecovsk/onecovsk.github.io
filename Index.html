@@ -1,0 +1,200 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Oliver's Restaurant</title> 
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head> 
+
+<body>  
+	<!-- Create index page -->
+	<div data-role="page" id="index">
+		<!-- Produce header and set position -->
+		<div data-role="header" data-position="fixed" data-fullscreen="true">
+			<h1>Oliver's Restaurant</h1>
+		</div>
+		<br>
+		<!-- Create main content for index-->
+		<div data-role="main" class="ui-content">
+			<!-- Insert a navigation bar -->
+			<nav data-role="navbar">
+			<ul>
+				<li><a href="#about" data-icon="info" data-inconpos="top" data-transition="slidedown">About Us</a></li>
+				<li><a href="#menu" data-role="button" data-icon="grid" data-iconpos="top" data-transition="slidedown">Menu</a></li>
+				<li><a href="#locate" data-icon="search" data-inconpos="top" data-transition="slidedown">Locate Us</a></li>
+				<li><a href="tel:+123456789" data-icon="home" data-iconpos="top" data-transition="slidedown" >Contact Us</a></li>
+				<li><a href="#develop" data-icon="info" data-iconpos="top" data-transition="slidedown">Developer Info</a></li>
+				<li><a href="#feedback" data-icon="star" data-iconpos="top" data-transition="slidedown">Feedback</a></li>
+			</ul>
+		</div>
+		<br>
+		<br>
+		<!-- Produce footer -->
+		<div data-role="footer" data-position="fixed">
+			<h3>&copy; Oliver Necovski</h3>
+		</div>
+	</div>
+	 
+	<!-- Create about page -->
+	<div data-role="page" id="about">
+		<div data-role="header" data-position="fixed" data-fullscreen="true">
+			<!-- Back button -->
+			<a href="#index" data-role="button" data-icon="home" data-iconpos="left" data-transition="slidedown" data-direction="reverse" role="button">Home</a>
+			<h1>About us</h1>
+		</div>
+		<br>
+		<div data-role="main" class="ui-content">
+		<h2>This page is currently under construction</h2>
+		</div>
+		<br>
+		<br>
+		<!-- Produce footer -->		
+		<div data-role="footer" data-position="fixed">
+			<h3>&copy; Oliver Necovski</h3>
+		</div>
+	</div>
+	
+	<!-- Create menu page -->
+	<div data-role="page" id="menu">
+		<div data-role="header" data-position="fixed">
+			<!-- Back button -->
+			<a href="#index" data-role="button" data-icon="home" data-iconpos="left" data-transition="slidedown" data-direction="reverse" role="button">Home</a>
+			<h1>Our menu</h1>
+		</div>
+		<br>
+		<div data-role="main" class="ui-content">
+              <!-- Produce list with various dishes served -->
+			  <ul data-role="listview">
+                    <li>Main
+                         <ul>
+                              <li>Pizza
+                                   <ul>
+                                       <li>American</li>
+                                       <li>Hawaiian</li>
+                                       <li>Meat Lovers</li>
+                                   </ul>
+                              </li>
+                              <li>Pasta
+                                   <ul>
+                                       <li>Lasagne</li>
+                                       <li>Bolognese</li>
+                                   </ul>
+                              </li>
+                              <li>Soup
+                                   <ul>
+                                       <li>Chicken</li>
+                                       <li>Vegetable</li>
+                                       <li>Pumpkin</li>
+                                   </ul>
+                              </li>
+                         </ul>
+                    </li>
+					<li> Desert
+						<ul>	
+							<li>Strawberry Pancakes</li>
+							<li>Chocolate cake</li>
+							<li>Ice cream</li>
+						</ul>
+					</li>
+               </ul>
+
+		</div>
+		<br>
+		<br>
+		<!-- Produce footer -->
+		<div data-role="footer" data-position="fixed">
+			<h3>&copy; Oliver Necovski</h3>
+		</div>
+	</div>
+	
+	<!-- Create location page -->
+	<div data-role="page" id="locate">
+		<div data-role="header" data-position="fixed" data-fullscreen="true">
+			<!-- Back button -->
+			<a href="#index" data-role="button" data-icon="home" data-iconpos="left" data-transition="slidedown" data-direction="reverse" role="button">Home</a>
+			<h1>Locate us</h1>
+		</div>
+		<br>
+		<!-- Show location on restaurant webpage -->
+		<iframe text-align="center" width="100%" height="420" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=75+Pigdons+Road,+Waurn+Ponds,+Victoria,+Australia&amp;key=AIzaSyDdFOTYlDi4IyotVK_Z1POQFj1skD15aB4">
+        </iframe>
+		<br>
+		<br>
+		<br>
+		<!-- Open location with Google Maps -->
+		<nav data-role="navbar" class="not_navbar ui-navbar" role="navigation">
+            <a href="https://www.google.com.au/maps/place/Deakin+University/@-38.1963426,144.3035993,16z/data=!4m2!3m1!1s0x0000000000000000:0xc0f7d39b2ebe86b2" data-icon="forward" data-iconpos="top" data-transition="pop">Open with Google Maps</a>
+        </nav>
+		<br>
+		<!-- Produce footer -->
+		<div data-role="footer" data-position="fixed">
+			<h3>&copy; Oliver Necovski</h3>
+		</div>
+	</div>
+	
+	
+	<!-- Create developer info page -->
+	<div data-role="page" id="develop">
+		<div data-role="header" data-position="fixed" data-fullscreen="true">
+			<!-- Back button -->
+			<a href="#index" data-role="button" data-icon="home" data-iconpos="left" data-transition="slidedown" data-direction="reverse" role="button">Home</a>
+			<h1>Developer Info</h1>
+		</div>
+		<br>
+		<div data-role="main" class="ui-content">
+		<h2>This page is currently under construction</h2>
+
+		</div>
+		<br>
+		<br>
+		<!-- Produce footer -->
+		<div data-role="footer" data-position="fixed">
+			<h3>&copy; Oliver Necovski</h3>
+		</div>
+	</div>
+	 
+	<!-- Create feedback page -->
+	<div data-role="page" id="feedback">
+		<div data-role="header" data-position="fixed" data-fullscreen="true">
+			<!-- Back button -->
+			<a href="#index" data-role="button" data-icon="home" data-iconpos="left" data-transition="slidedown" data-direction="reverse" role="button">Home</a>
+			<h1>About us</h1>
+		</div>
+		<br>
+		<div data-role="main" class="ui-content">
+		<!-- Create textboxes for input -->
+		<h4>Customer Name:</h4>
+		<textarea id="c_name"></textarea>
+		<br>
+		<h4>Customer Information:</h4>
+		<textarea id="c_info"></textarea>
+		<br>
+		<h4>Feedback:</h4>
+		<textarea id="c_feedback"></textarea>
+		<br>
+		<!-- Add a rating option -->
+		<select name="c_rating" id="c_rate">
+			<option value="0" selected="selected">Rate your Experience</option>
+			<option value="1">Poor</option>
+			<option value="2">Average</option>
+			<option value="3">Good</option>
+			<option value="4">Excellent</option>
+		</select>
+		<br>
+		<br>
+		<hr>
+		<!-- Submit button -->
+		<input type="submit" value="Submit" data-inline="true">
+		</div>
+		<br>
+		<br>
+		<!-- Produce footer -->
+		<div data-role="footer" data-position="fixed">
+			<h3>&copy; Oliver Necovski</h3>
+		</div>
+	</div>
+	 
+</body>
+<html>
